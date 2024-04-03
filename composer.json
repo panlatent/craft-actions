@@ -1,0 +1,44 @@
+{
+  "name": "panlatent/craft-actions",
+  "type": "craft-plugin",
+  "license": "proprietary",
+  "support": {
+    "email": "panlatent@gmail.com"
+  },
+  "require": {
+    "php": ">=8.2",
+    "craftcms/cms": "^5.0.0",
+    "guzzlehttp/guzzle": "^7.8",
+    "panlatent/cron-expression-descriptor": "^1.1"
+  },
+  "require-dev": {
+    "craftcms/ecs": "dev-main",
+    "craftcms/phpstan": "dev-main"
+  },
+  "autoload": {
+    "psr-4": {
+      "panlatent\\craft\\actions\\": "src/"
+    }
+  },
+  "extra": {
+    "handle": "actions",
+    "name": "Actions",
+    "developer": "Panlatent",
+    "documentationUrl": "https://docs.panlatent.com/craft-actions"
+  },
+  "scripts": {
+    "check-cs": "ecs check --ansi",
+    "fix-cs": "ecs check --ansi --fix",
+    "phpstan": "phpstan --memory-limit=1G"
+  },
+  "config": {
+    "sort-packages": true,
+    "platform": {
+      "php": "8.2"
+    },
+    "allow-plugins": {
+      "yiisoft/yii2-composer": true,
+      "craftcms/plugin-installer": true
+    }
+  }
+}
