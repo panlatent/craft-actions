@@ -13,6 +13,7 @@ use panlatent\craft\actions\services\Actions;
  *
  * @method static Plugin getInstance()
  * @method Settings getSettings()
+ * @property-read Actions $actions
  * @author Panlatent <panlatent@gmail.com>
  * @copyright Panlatent
  * @license https://craftcms.github.io/license/ Craft License

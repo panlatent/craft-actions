@@ -41,7 +41,7 @@ class HttpRequest extends Action
     public string $body = '';
 
 
-    public function run(ContextInterface $context): OutputInterface
+    public function execute(ContextInterface $context): OutputInterface
     {
         $client = new Client();
 

@@ -4,7 +4,7 @@ namespace panlatent\craft\actions\base;
 
 use craft\base\SavableComponent;
 
-abstract class Action extends SavableComponent implements ActionInterface
+abstract class Action extends SavableComponent implements ActionAbstractInterface
 {
-
+    use ActionTrait;
 }

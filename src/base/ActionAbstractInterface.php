@@ -5,7 +5,7 @@ namespace panlatent\craft\actions\base;
 use craft\base\SavableComponentInterface;
 use panlatent\craft\actions\enums\ActionKind;
 
-interface ActionInterface extends ActionAbstractInterface, SavableComponentInterface
+interface ActionAbstractInterface
 {
-    public static function defineKind(): ActionKind;
+    public function execute(ContextInterface $context): bool;
 }

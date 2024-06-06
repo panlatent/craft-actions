@@ -1,6 +1,8 @@
 # Actions
 
-
+## Features
+- Workflow and Designer
+- Execute on the command line and in the browser
 
 ## Requirements
 
@@ -28,3 +30,17 @@ composer require panlatent/craft-actions
 # tell Craft to install the plugin
 ./craft plugin/install actions
 ```
+## Usage
+
+### Concepts
+
+- `Action` is a specific operation or task
+- `Trigger` define which external events to respond to.
+- `Script` is a sequence of actions without trigger and conditions
+- `Workflow` is is a complex script with triggers and conditions
+- `Automation` is similar to workflow, but is usually used by developers
+
+#### Workflow vs Automation
+
+- Workflow is [Element]()
+- Automation supports [Project Config](), which means it can sync with your project
