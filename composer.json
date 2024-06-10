@@ -17,8 +17,12 @@
   },
   "autoload": {
     "psr-4": {
-      "panlatent\\craft\\actions\\": "src/"
+      "Panlatent\\Actions\\": "src/actions/",
+      "panlatent\\craft\\actions\\": "src/craft/"
     }
+  },
+  "replace": {
+    "panlatent/actions": "self.version"
   },
   "extra": {
     "handle": "actions",
