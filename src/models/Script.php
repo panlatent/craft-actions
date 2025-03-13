@@ -3,8 +3,8 @@
 namespace panlatent\craft\actions\models;
 
 use craft\base\Model;
-use Panlatent\Actions\ActionInterface;
-use Panlatent\Actions\ContextInterface;
+use Panlatent\Action\ActionInterface;
+use Panlatent\Action\ContextInterface;
 use panlatent\craft\actions\Plugin;
 
 class Script extends Model implements ActionInterface

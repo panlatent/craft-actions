@@ -3,7 +3,7 @@
 namespace panlatent\craft\actions\elements;
 
 use craft\base\Element;
-use Panlatent\Actions\WorkflowInterface;
+use Panlatent\Action\WorkflowInterface;
 
 class Workflow extends Element implements WorkflowInterface
 {

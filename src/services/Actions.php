@@ -11,8 +11,9 @@ use craft\helpers\Component as ComponentHelper;
 use craft\helpers\Db;
 use craft\helpers\Json;
 use craft\helpers\StringHelper;
-use Panlatent\Actions\ActionInterface;
+use Panlatent\Action\ActionInterface;
 use panlatent\craft\actions\base\Service;
+use panlatent\craft\actions\bundle\Bundle;
 use panlatent\craft\actions\db\Table;
 use panlatent\craft\actions\events\ActionEvent;
 
@@ -28,7 +29,7 @@ class Actions extends Service
      */
     public function getAllActionTypes(): array
     {
-        $types = [];
+        $types = Bundle::actions();
         $event = new RegisterComponentTypesEvent(['types' => $types]);
         $this->trigger(self::EVENT_REGISTER_ACTION_TYPES, $event);
         return $event->types;

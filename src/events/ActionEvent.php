@@ -3,7 +3,7 @@
 namespace panlatent\craft\actions\events;
 
 use craft\events\ModelEvent;
-use Panlatent\Actions\ActionInterface;
+use Panlatent\Action\ActionInterface;
 
 class ActionEvent extends ModelEvent
 {

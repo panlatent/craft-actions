@@ -3,7 +3,7 @@
 namespace panlatent\craft\actions\base;
 
 use craft\base\SavableComponent;
-use Panlatent\Actions\TriggerInterface;
+use Panlatent\Action\TriggerInterface;
 
 abstract class Trigger extends SavableComponent implements TriggerInterface
 {

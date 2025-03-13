@@ -8,6 +8,8 @@
   "require": {
     "php": ">=8.2",
     "craftcms/cms": "^5.0.0",
+    "panlatent/craft-action-abstract": "@dev",
+    "panlatent/craft-action-bundle": "@dev",
     "guzzlehttp/guzzle": "^7.8",
     "panlatent/cron-expression-descriptor": "^1.1"
   },
@@ -17,8 +19,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Panlatent\\Actions\\": "src/actions/",
-      "panlatent\\craft\\actions\\": "src/craft/"
+      "panlatent\\craft\\actions\\": "src/"
     }
   },
   "replace": {

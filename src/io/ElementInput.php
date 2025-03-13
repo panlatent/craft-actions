@@ -3,7 +3,7 @@
 namespace panlatent\craft\actions\io;
 
 use craft\base\ElementInterface;
-use Panlatent\Actions\InputInterface;
+use Panlatent\Action\InputInterface;
 
 class ElementInput implements InputInterface
 {
